@@ -1,0 +1,89 @@
+.about__container {
+    padding: 5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__chamada,
+.about__text {
+    width: 45%;
+}
+
+/* .about__chamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.about__tag {
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--laranja-claro);
+    position: relative;
+    margin-left: 3em;
+}
+
+.about__titulo {
+    margin-bottom: 1em;
+}
+
+.about__paragraf {
+    margin-bottom: 1em;
+}
+
+.about__text b,
+.about__titulo--skills {
+    color: var(--laranja-claro);
+}
+
+
+.about__tag::before,
+.about__tag::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    background-color: var(--laranja-claro);
+}
+
+.about__tag::before {
+    left: -40px;
+}
+
+.about__tag::after {
+    right: -40px;
+}
+
+
+
+.about__list {
+    margin-bottom: 3em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about__skill {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.about__skill img {
+    width: 100%;
+}
+
+.about__cta {
+    color: var(--laranja-claro);
+    border: solid 1px var(--laranja-claro);
+    border-radius: 10px;
+    font-size: .8em;
+    margin: 0 auto;
+}

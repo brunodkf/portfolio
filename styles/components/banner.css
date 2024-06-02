@@ -1,0 +1,142 @@
+.banner{
+    position: relative;
+    /* background-image: url(./../../assets/imagens/Untitled\ design\ 1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; */
+    margin: 1.2em 0;
+}
+.banner__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./../../assets/imagens/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-color: rgba(61, 88, 88, 0.363); */
+}
+.banner__text, .banner__hero{
+    width: 45%;
+    /* background-color: rgb(20, 87, 87); */
+}
+
+.banner__hero--img{
+    width: 100%;
+}
+
+.banner__introduction{
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--laranja-claro);
+    /* color: var(--cinza-principal); */
+}
+.banner__titulo{
+    margin-bottom: .5em;
+}
+.banner__paragraf{
+    margin-bottom: 2em;
+}
+
+.banner__especialidades{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 10px;
+    color: var(--branco);
+    margin-bottom: 2em;
+}
+.banner__especialidades li{
+    border-right: solid var(--laranja-claro);
+}
+.banner__especialidades li:nth-child(2), .banner__especialidades li:nth-child(4){
+    border: none;
+}
+
+.banner__skills{
+    margin-bottom: 3em;
+    display: flex;
+    gap: 1em;
+}
+
+.banner__skill{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__skill img{
+   width: 100%;
+}
+
+.banner__cta{
+    color: var(--laranja-claro);
+    border: solid 1px var(--laranja-claro);
+    border-radius: 10px;
+    font-size: .8em;
+}
+
+.banner__socials {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 35%;
+}
+.banner__socials::before {
+    content: '';
+    width: 3px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    border-radius: 10px;
+    background-color: #EDEDED;
+}
+.banner__socialList {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+.banner__redes {
+    width: 40px;
+    height: 40px;
+}
+.banner__redes span {
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 13px;
+}
+.banner__redes:nth-child(1) span {
+    background-image: url(./../../assets/imagens/socials/instagram.webp);
+}
+.banner__redes:nth-child(2) span {
+    background-image: url(./../../assets/imagens/socials/linkedin.webp);
+}
+.banner__redes:nth-child(3) span {
+    background-image: url(./../../assets/imagens/socials/zap.webp);
+}
+.banner__redes:nth-child(4) span {
+    background-image: url(./../../assets/imagens/socials/github.webp);
+}
+.banner__socials::after {
+    content: '';
+    width: 3px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    background-color: #EDEDED;
+}
