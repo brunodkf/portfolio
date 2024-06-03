@@ -1,10 +1,12 @@
-.portfolio{
+.portfolio {
     background-color: var(--preto);
 }
-.portfolio__container{
+
+.portfolio__container {
     text-align: center;
     padding: 4em 0;
 }
+
 .portfolio__tag {
     text-transform: uppercase;
     font-size: .8em;
@@ -13,6 +15,7 @@
     color: var(--laranja-claro);
     position: relative;
 }
+
 .portfolio__tag::before,
 .portfolio__tag::after {
     content: '';
@@ -35,4 +38,124 @@
 
 .portfolio__titulo {
     margin-bottom: 1em;
+}
+
+.portfolio__view{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    font-size: .6em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1em;
+}
+.portfolio__view a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--laranja-claro);
+    padding-bottom: .125em;
+    border-bottom: solid 1px;
+}
+
+.portfolio__projetos {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.portfolio__projeto {
+    background-color: var(--cinza);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.portfolio__projeto:hover .portfolio__projeto--content{
+    transition: ease .4s;
+    opacity: 1;
+}
+.portfolio__projeto:hover::after{
+    transition: ease .4s;
+    opacity: 1;
+}
+
+
+.portfolio__projeto::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 24%, rgba(0,0,0,0.7343312324929971) 73%, rgba(0,0,0,0.5830707282913166) 100%);
+    z-index: 0;
+
+    opacity: 0;
+}
+
+.portfolio__projeto--content {
+    opacity: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 1;
+    padding: 1em;
+}
+
+.portfolio__projeto--content small {
+    color: var(--branco);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    border-radius: 3px;
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+    padding: .1em 1em;
+    margin-bottom: 10px;
+    font-size: .7em;
+}
+.portfolio__projeto--content p{
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+
+
+
+.portfolio__projeto--link {
+    color: var(--laranja-claro);
+    border: solid 1px var(--laranja-claro);
+    border-radius: 8px;
+    font-size: .7em;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: solid 1px;
+    font-weight: 600;
+    padding: .5em 3em;
+    margin-bottom: .5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.portfolio__projeto:nth-child(1) {
+    background-image: url(./../../assets/imagens/projetos/lamedic.webp);
 }

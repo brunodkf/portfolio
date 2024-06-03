@@ -9,10 +9,11 @@
     <link rel="preload" as="font" href="./assets/fonts/Gotham-Bold.woff2" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <script async defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -127,14 +128,21 @@
                     e gerentes de projeto, em um ambiente ágil e dinâmico.
                 </p>
 
-            
+
             </div>
             <div class="about__chamada">
-                <p class="about__paragraf"> Hoje continuo transformando ideias em realidade, fazendo dos melhores protóticos, as melhores
+                <p class="about__paragraf"> Hoje continuo transformando ideias em realidade, fazendo dos melhores
+                    protóticos, as melhores
                     aplicações web para todos os usuários.</p>
 
+                <p class="about__paragraf about__citacao"> Ah, também é possível terem visto um "Brunodkf" por ai, mas o
+                    significado é
+                    que isso foi só uma recomendação do Google em um joguinho online. M1ais de 12 anos e não tem
+                    significado nenhum. hehe' </p>
+
+
                 <h3 class="about__titulo--skills">Habilidades :</h3>
-                
+
                 <ul class="about__list">
                     <li class="about__skill"><img src="./assets/imagens/skills/html.png" alt="js"></li>
                     <li class="about__skill"><img src="./assets/imagens/skills/css.png" alt="js"></li>
@@ -154,10 +162,96 @@
         <div class="portfolio__container container">
             <span class="portfolio__tag">Portfólio</span>
             <h2 class="portfolio__titulo">Últimos Projetos</h2>
+
+            <div class="portfolio__view">
+                <a href="https://github.com/brunodkf?tab=repositories" target="_blank">todos os projetos</a>
+            </div>
+
+            <ul class="portfolio__projetos">
+                <li class="portfolio__projeto">
+                    <div class="portfolio__projeto--content">
+                        <small>website</small>
+                        <p>La Medic Rio</p>
+                        <a target="_blank" href="https://lamedicrio.com/" class="portfolio__projeto--link cta">Veja
+                            agora</a>
+                    </div>
+                </li>
+                <li class="portfolio__projeto">
+                    <div class="portfolio__projeto--content">
+                        <small>website</small>
+                        <p>La Medic Rio</p>
+                        <a target="_blank" href="https://lamedicrio.com/" class="portfolio__projeto--link cta">Veja
+                            agora</a>
+                    </div>
+                </li>
+                <li class="portfolio__projeto">
+                    <div class="portfolio__projeto--content">
+                        <small>website</small>
+                        <p>La Medic Rio</p>
+                        <a target="_blank" href="https://lamedicrio.com/" class="portfolio__projeto--link cta">Veja
+                            agora</a>
+                    </div>
+                </li>
+                <li class="portfolio__projeto">
+                    <div class="portfolio__projeto--content">
+                        <small>website</small>
+                        <p>La Medic Rio</p>
+                        <a target="_blank" href="https://lamedicrio.com/" class="portfolio__projeto--link cta">Veja
+                            agora</a>
+                    </div>
+                </li>
+                <li class="portfolio__projeto">
+                    <div class="portfolio__projeto--content">
+                        <small>website</small>
+                        <p>La Medic Rio</p>
+                        <a target="_blank" href="https://lamedicrio.com/" class="portfolio__projeto--link cta">Veja
+                            agora</a>
+                    </div>
+                </li>
+                <li class="portfolio__projeto">
+                    <div class="portfolio__projeto--content">
+                        <small>website</small>
+                        <p>La Medic Rio</p>
+                        <a target="_blank" href="https://lamedicrio.com/" class="portfolio__projeto--link cta">Veja
+                            agora</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
-    <section class="depoimentos"></section>
+    <section class="depoimentos">
+        <div class="depoimentos__container container">
+            <span class="depoimentos__tag">Depoimentos</span>
+            <h2 class="depoimentos__titulo">Últimos Projetos</h2>
+
+            <div class="swiper carrousel__depoimentos">
+                <div class="carrousel__depoimentos--wrapper swiper-wrapper">
+                    <div class="swiper-slide carrousel__item--depoimentos">
+
+
+                    </div>
+                    <div class="swiper-slide carrousel__item--depoimentos">
+
+
+                    </div>
+                    <div class="swiper-slide carrousel__item--depoimentos">
+
+
+                    </div>
+                    <div class="swiper-slide carrousel__item--depoimentos">
+
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev  button__carrousel-prev"></div>
+                <div class="swiper-button-next button__carrousel-next"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contato"></section>
     <footer class="footer"></footer>
+
+    <script src="./scripts/index.js" defer type="text/javascript"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 .about__container {
-    padding: 5em 0;
+    padding: 8em 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,11 +10,11 @@
     width: 45%;
 }
 
-/* .about__chamada {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+.about__citacao{
+    background-color: var(--preto);
+    padding: .3em;
+    opacity: .9;
+}
 
 .about__tag {
     text-transform: uppercase;
