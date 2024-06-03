@@ -31,6 +31,10 @@
     right: -40px;
 }
 
+.depoimentos__text{
+    padding: 1em 0 3em;
+}
+
 .carrousel__depoimentos{
     width: 70%;
     margin: 0 auto;
@@ -41,5 +45,67 @@
 .carrousel__item--depoimentos{
     width: 100%;
     height: 200px;
+    text-align: left;
+    padding: 1em;
     background-color: var(--preto);
+    position: relative;
+    border-radius: 5px;
+}
+
+.carrousel__item--depoimentos::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    background-image: url(./../../assets/imagens/aspa.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    opacity: .05;
+    z-index: 0;
+}
+
+
+.carrousel__depoimentos--span{
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: var(--laranja-claro--hover);
+}
+.carrousel__depoimentos--cargo{
+    padding-top: .5em;
+    color: var(--laranja-claro);
+    padding-bottom: 1em;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, -2.5em);
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--laranja-claro);
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    color: var(--laranja-claro);
+    display: none;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    left: auto;
+    right: -2em;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    right: auto;
+    left: -2em;
 }
