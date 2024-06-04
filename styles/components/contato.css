@@ -1,0 +1,77 @@
+.contato{
+    background-color: var(--preto);
+}
+.contato__container{
+    text-align: center;
+    padding: 4em 0;
+}
+
+.contato__tag {
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--laranja-claro);
+    position: relative;
+}
+.contato__tag::before, .contato__tag::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    background-color: var(--laranja-claro);
+}
+
+.contato__tag::before {
+    left: -40px;
+}
+.contato__tag::after {
+    right: -40px;
+}
+
+.contato__form{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+.contato__form--label{
+    display: none;
+}
+.contato__form--campo {
+    width: 90%;
+    background-color: var(--cinza);
+    padding: .7em 1em;
+    border: none;
+    margin-bottom: 1.5em;
+    color: var(--branco);
+    font-size: 1em;
+}
+.contato__form--campo:focus-visible{
+   outline: none;
+}
+
+.contato__politica {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    color: var(--branco);
+}
+.contato__politica label{
+    font-size: .7em;
+    opacity: .6;
+}
+.contato__politica a{
+    text-decoration: none;
+    color: var(--laranja-claro);
+}
+.contato__form--submit{
+    color: var(--laranja-claro);
+    border: solid 1px var(--laranja-claro);
+    border-radius: 10px;
+    font-size: .8em;
+    margin: 0 auto;
+    background-color: transparent;
+    cursor: pointer;
+}

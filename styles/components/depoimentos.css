@@ -1,10 +1,7 @@
-.depoimentos{
-    height: 600px;
-}
 
 .depoimentos__container{
     text-align: center;
-    padding: 4em 0;
+    padding: 6em 0 9em;
 }
 .depoimentos__tag {
     text-transform: uppercase;
@@ -32,7 +29,7 @@
 }
 
 .depoimentos__text{
-    padding: 1em 0 3em;
+    padding: 1em 0 4em;
 }
 
 .carrousel__depoimentos{

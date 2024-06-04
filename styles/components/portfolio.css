@@ -67,6 +67,8 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+
+    margin-bottom: 2em;
 }
 
 .portfolio__projeto {

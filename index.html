@@ -9,7 +9,9 @@
     <link rel="preload" as="font" href="./assets/fonts/Gotham-Bold.woff2" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -32,6 +34,15 @@
                 <li class="header__menu--item"><a href="#" class="header__menu--link">Projetos</a></li>
                 <li class="header__menu--item"><a href="#contato" class="header__menu--link">Contato</a></li>
             </ul>
+
+            <div class="hamburguer-container" id="btn-mobile">
+                <input aria-label="checkbox" type="checkbox" id="checkbox-menu" data-button-menu>
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
         </nav>
     </header>
     <section class="banner">
@@ -223,29 +234,53 @@
         <div class="depoimentos__container container">
             <span class="depoimentos__tag">Depoimentos</span>
             <h2 class="depoimentos__titulo">Feedback</h2>
-            <p class="depoimentos__text">Explore abaixo para ler mais sobre as experiências autênticas dos nossos clientes</p>
+            <p class="depoimentos__text">Explore abaixo para ler mais sobre as experiências autênticas dos nossos
+                clientes</p>
 
             <div class="swiper carrousel__depoimentos">
                 <div class="carrousel__depoimentos--wrapper swiper-wrapper">
                     <div class="swiper-slide carrousel__item--depoimentos">
                         <h3 class="carrousel__depoimentos--titulo">Anderson Nascimento</h3>
                         <span class="carrousel__depoimentos--span"></span>
-                        <p class="carrousel__depoimentos--cargo">CEO LA Medic Rio</p>
+                        <p class="carrousel__depoimentos--cargo">Sócio Fundador - LA Medic Rio</p>
 
-                        <p class="carrousel__depoimentos--citacao">Grande Bruno, muito obrigado por desenvolver o site da minha empresa.
-                            Com certeza é mais uma realização de um sonho pra todos nós. O site tem sido um sucesso e de grande valia.
+                        <p class="carrousel__depoimentos--citacao">Grande Bruno, muito obrigado por desenvolver o site
+                            da minha empresa.
+                            Com certeza é mais uma realização de um sonho pra todos nós. O site tem sido um sucesso e de
+                            grande valia.
                         </p>
                     </div>
                     <div class="swiper-slide carrousel__item--depoimentos">
+                        <h3 class="carrousel__depoimentos--titulo">Thayane Fabiano</h3>
+                        <span class="carrousel__depoimentos--span"></span>
+                        <p class="carrousel__depoimentos--cargo">UX UI Designer | Product Designer</p>
 
-
+                        <p class="carrousel__depoimentos--citacao">Trabalhar com o Bruno na Lumis me ajudou
+                            muito a entender mais sobre desenvolvimento e me tornar uma designer melhor. Sua disposição
+                            de aprender, colaborar e dedicação para entregar o melhor resultado possível causaram uma
+                            excelente impressão em mim.
+                        </p>
                     </div>
                     <div class="swiper-slide carrousel__item--depoimentos">
+                        <h3 class="carrousel__depoimentos--titulo">Anderson Nascimento</h3>
+                        <span class="carrousel__depoimentos--span"></span>
+                        <p class="carrousel__depoimentos--cargo">CEO LA Medic Rio</p>
 
-
+                        <p class="carrousel__depoimentos--citacao">Grande Bruno, muito obrigado por desenvolver o site
+                            da minha empresa.
+                            Com certeza é mais uma realização de um sonho pra todos nós. O site tem sido um sucesso e de
+                            grande valia.
+                        </p>
                     </div>
                     <div class="swiper-slide carrousel__item--depoimentos">
+                        <h3 class="carrousel__depoimentos--titulo">Bruna Gomes</h3>
+                        <span class="carrousel__depoimentos--span"></span>
+                        <p class="carrousel__depoimentos--cargo">Social Media | Branding | Inbound Marketing</p>
 
+                        <p class="carrousel__depoimentos--citacao">Bruno é um profissional muito dedicado e solicito.
+                            Atuamos juntos em diversos projetos, onde ele demonstrou muita eficiência e agilidade, além
+                            de sempre entregar um bom serviço.
+                        </p>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -254,8 +289,81 @@
             </div>
         </div>
     </section>
-    <section class="contato"></section>
-    <footer class="footer"></footer>
+    <section class="contato">
+        <div class="contato__container container">
+            <span class="contato__tag">Contato</span>
+            <h2 class="contato__titulo">
+                Entre em contato
+            </h2>
+
+
+            <form class="contato__form">
+                <label class="contato__form--label" for="firstname">Nome : </label>
+                <input placeholder="Nome" class="contato__form--campo" type="text" name="firstname" required>
+                <br>
+                <label class="contato__form--label" for="phone">Telefone : </label>
+                <input placeholder="(xx) xxxxx-xxxx" class="contato__form--campo" type="tel" name="phone" required>
+                <br>
+                <label class="contato__form--label" for="email">Email : </label>
+                <input placeholder="exemplo@email.com" class="contato__form--campo" type="email" name="email" required>
+                <br>
+                <label class="contato__form--label" for="message">Mensagem : </label>
+                <textarea placeholder="Fique a vontade para descrever aquilo que mais lhe interessa!"
+                    class="contato__form--campo" name="message" type="text" required cols="30" rows="10"></textarea>
+                <br>
+                <div class="contato__politica">
+                    <input type="checkbox" id="privacy" name="privacy" required />
+                    <label for="privacy">Ao concordar, nossa empresa poderá enviar comunicações e conteúdos de
+                        acordo com seus interesses. Você pode modificar as suas permissões de dados a qualquer
+                        momento em nossa <a href="privacidade.html">Política de Privacidade</a>.</label>
+                </div>
+                <input class="contato__form--submit cta" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__logo">
+                <a href="#">
+                    <img width="60" height="60" loading="lazy" src="./assets/imagens/logoBranca.webp" alt="Logo Branca">
+                </a>
+            </div>
+
+            <ul class="footer__socialList">
+                <li class="footer__redes">
+                    <a target="_blank" aria-label="Redes Sociais"
+                        href="https://api.whatsapp.com/send?phone=5521985450123&amp;text="><img loading="lazy"
+                            width="20" height="20" src="./assets/imagens/socials/zap.webp"
+                            alt="icone de redes sociais"></a>
+                </li>
+                <li class="footer__redes">
+                    <a target="_blank" aria-label="Redes Sociais" href="https://www.instagram.com/la.medic.rio/"><img
+                            loading="lazy" width="20" height="20" src="./assets/imagens/socials/instagram.webp"
+                            alt="icone de redes sociais"></a>
+                </li>
+
+                
+                <li class="footer__redes">
+                    <a target="_blank" aria-label="Redes Sociais"
+                        href="https://www.linkedin.com/in/la-medic-rio-406495207/"><img loading="lazy" width="20"
+                            height="20" src="./assets/imagens/socials/linkedin.webp" alt="icone de redes sociais"></a>
+                </li>
+
+                <li class="footer__redes">
+                    <a target="_blank" aria-label="Redes Sociais" href="mailto:comercial@lamedicrio.com"><img
+                            loading="lazy" width="20" height="20" src="./assets/imagens/socials/github.webp"
+                            alt="icone de redes sociais"></a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="footer__copy">
+            © Copyright 2024 Todos os direitos reservados | Developed by <a href="https://www.instagram.com/brunodkf/"
+                target="_blank"> @brunodkf</a>
+
+        </div>
+    </footer>
 
     <script src="./scripts/index.js" defer type="text/javascript"></script>
 </body>
