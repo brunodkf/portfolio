@@ -13,7 +13,7 @@
 }
 
 .header__img {
-    width: 50px;
+    width: 60px;
     padding: .2em;
 }
 
@@ -27,21 +27,31 @@
 }
 
 
-
 .header__menu--item {
     height: 100%;
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     overflow: hidden;
+
+    color: var(--laranja-claro);
+    background: linear-gradient(to right, var(--preto-escuro), var(--preto-escuro)), linear-gradient(to right, var(--laranja-claro), var(--laranja-claro), var(--laranja-claro));
+    background-size: 100% 1px, 0 1px;
+    background-position: 0% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 800ms;
+    background-position-y: 35px;
 }
 
 .header__menu--item:hover {
+    transition: ease-in .5s;
+    background-size: 0 1px, 100% 1px;
+}
+.header__menu--item:hover>.header__menu--link{
     transition: ease-in .2s;
-    /* background: var(--cinza-principal); */
-    background-color: var(--laranja-claro--hover);
+    color: var(--laranja-claro);
 }
 
 .header__menu--link {
@@ -107,7 +117,6 @@
     top: 16px;
 }
 
-
 #checkbox-menu:checked+label span:nth-child(1) {
     transform: rotate(-45deg);
     top: 8px;
@@ -128,6 +137,7 @@
     .header__menu {
         display: none;
     }
+
     .header__container {
         background-color: transparent;
     }
@@ -137,4 +147,70 @@
         margin-left: 10px;
     }
 
+}
+
+
+
+/* MOBILE */
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header.mobile .header__img {
+    z-index: 99999;
+}
+
+.header.mobile .header__menu {
+    width: 100vw;
+    height: 50vh;
+    padding: 0px;
+    gap: 15%;
+    left: 0;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    background: var(--cinza);
+    position: absolute;
+    animation: zoom .2s ease-in;
+    z-index: 9999;
+    bottom: 0;
+    flex-direction: column;
+}
+
+.header.mobile .header__menu:nth-child(1) {
+    top: 0;
+    justify-content: end;
+    padding-bottom: 3em;
+}
+
+.header.mobile .header__menu--item {
+    height: 10%;
+    width: 90%;
+    border-bottom: solid 1px var(--laranja-claro);
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.header.mobile .header__menu--link {
+    text-decoration: none;
+    color: var(--branco-secundario);
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1.125em;
+}
+
+.header.mobile body {
+    overflow-y: hidden;
 }

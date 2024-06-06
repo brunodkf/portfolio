@@ -16,7 +16,7 @@
     --preto-principal: #2C3A3D;
     --preto-escuro: #1b1b1b;
     /* fonts */
-    --fonte-principal:'Inter', 'Open Sans';
+    --fonte-principal: 'Inter', 'Open Sans';
     --fonte-titulo: 'Gotham-Bold';
 
     /* testes */
@@ -31,16 +31,19 @@
     src: url(./../../assets/fonts/Gotham-Bold.woff2) format("woff2");
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Gotham-Light';
     src: url(./../../assets/fonts/Gotham-Light.woff2) format("woff2");
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Gotham-Book';
     src: url(./../../assets/fonts/GothamBook.woff2) format("woff2");
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Gotham-Medium';
     src: url(./../../assets/fonts/GothamMedium.woff2) format("woff2");
@@ -65,4 +68,19 @@
     padding: .8em 4em;
     border-radius: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--preto-escuro);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cinza);
+    border-radius: 20px;
+    border: 3px solid var(--preto);
 }
