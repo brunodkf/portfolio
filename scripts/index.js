@@ -5,25 +5,35 @@ const corpoSite = document.querySelector('html')
 
 button.addEventListener('click', function () {
 
- navMenu.forEach(e => e.classList.toggle("mobile"));
+  navMenu.forEach(e => e.classList.toggle("mobile"));
 
- corpoSite.style = 'overflow: hidden;';
+  corpoSite.style = 'overflow: hidden;';
+  if(document.querySelector('.header.mobile') == null){
+    corpoSite.removeAttribute("style");
+  }
 
- if(document.querySelector('[data-button-menu]').checked == false){
-  corpoSite.removeAttribute("style");
- }
-
-  const someBarra = () => {
-    if (window.scrollY >= 500) {
+  const someBarra = () => { //função que reseta o menu mobile
+    if (window.scrollY >= 500) { //condição ativada ao scroll vertical ser ativado
       navMenu.forEach(e => e.classList.remove("mobile"));
-      corpoSite.removeAttribute("style");
       document.querySelector('#checkbox-menu').checked = false;
+      corpoSite.removeAttribute("style");
+    }
+
+    if (window.innerWidth > 1024) { //condição ativada ao atingir o valor de largura determinado
+      navMenu.forEach(e => e.classList.remove("mobile"));
+      document.querySelector('#checkbox-menu').checked = false;
+      corpoSite.removeAttribute("style");
     }
   }
 
   window.addEventListener('scroll', () => {
     someBarra();
   });
+
+  window.addEventListener('resize', () => {
+    someBarra();
+  });
+
 
 });
 
@@ -32,20 +42,20 @@ button.addEventListener('click', function () {
 // slide de depoimentos
 
 const swiperSequencial = new Swiper('.carrousel__depoimentos', {
-    slidesPerView: 1,
-    centeredSlides: true,
-    spaceBetween: 30,
-    loop: true,
-    // autoplay: true,
-    direction: 'horizontal',
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 30,
+  loop: true,
+  // autoplay: true,
+  direction: 'horizontal',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
 });

@@ -76,3 +76,29 @@
     border-radius: 10px;
     font-size: .8em;
 }
+
+
+@media screen and (max-width: 500px) {
+    .services__container {
+        text-align: center;
+        padding: 6em 0px;
+    }
+    .services__list {
+        flex-direction: column;
+    }
+    .services__card {
+        width: 100%;
+       
+    }
+    .services__text {
+        max-width: 100%;
+        padding-top: 2em;
+     margin: 0;
+    }
+    .services__cta {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3em;
+    }
+}
