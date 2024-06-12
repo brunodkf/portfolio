@@ -176,10 +176,7 @@
     padding-bottom: 3em;
 }
 
-.header.mobile .header__menu:nth-child(1) .header__menu--item:nth-child(3){
-    /* background-color: aqua; */
-    margin-bottom: 1em;
-}
+
 
 .header.mobile .header__menu--item {
     height: 10%;
@@ -209,6 +206,13 @@
 
 
 /* RESPONSIVIDADE MENU */
+
+@media screen and (max-width: 500px) {
+    .header.mobile .header__menu:nth-child(1) .header__menu--item:nth-child(3){
+        /* background-color: aqua; */
+        margin-bottom: 3em;
+    }
+}
 
 
 @media screen and (max-width:1024px) {
