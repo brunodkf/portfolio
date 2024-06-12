@@ -75,3 +75,12 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+    .contato__form {
+        width: 100%;
+    }
+    .contato__form--submit {
+        width: 85%;
+    }
+}
