@@ -161,3 +161,16 @@
 .portfolio__projeto:nth-child(1) {
     background-image: url(./../../assets/imagens/projetos/lamedic.webp);
 }
+
+
+
+@media screen and (max-width: 500px) {
+    .portfolio__view {
+        width: 100%;
+    }
+    .portfolio__projetos {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}

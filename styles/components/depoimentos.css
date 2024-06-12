@@ -106,3 +106,15 @@
     right: auto;
     left: -2em;
 }
+
+
+@media screen and (max-width: 500px){
+    .carrousel__item--depoimentos {
+        height: auto;
+    }
+    .carrousel__item--depoimentos::after {
+        width: 70%;
+        height: 70%;
+        left: 60px;
+    }
+}

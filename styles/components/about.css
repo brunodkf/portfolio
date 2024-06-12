@@ -116,6 +116,10 @@
     .about__tag::after {
         right: 27%;
     }
-
+    .about__cta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
   
 }
