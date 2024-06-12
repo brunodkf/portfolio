@@ -112,6 +112,9 @@
     .carrousel__item--depoimentos {
         height: auto;
     }
+    .carrousel__depoimentos {
+        width: 85%;
+    }
     .carrousel__item--depoimentos::after {
         width: 70%;
         height: 70%;
