@@ -176,6 +176,11 @@
     padding-bottom: 3em;
 }
 
+.header.mobile .header__menu:nth-child(1) .header__menu--item:nth-child(3){
+    /* background-color: aqua; */
+    margin-bottom: 1em;
+}
+
 .header.mobile .header__menu--item {
     height: 10%;
     width: 90%;
@@ -214,6 +219,8 @@
     .header__container {
         background-color: transparent;
     }
+
+   
 
     .hamburguer-container {
         display: flex;
