@@ -108,7 +108,7 @@
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
     .carrousel__item--depoimentos {
         height: auto;
     }

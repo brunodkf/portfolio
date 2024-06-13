@@ -100,22 +100,16 @@
         width: 100%;
     }
 
-    /* .about__titulo {
-        text-align: center;
-    } */
-    /* .about__tag {
-        width: 100%;
-        font-size: 1em;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    } */
-    /* .about__tag::before {
-        left: 27%;
+    .about__tag {
+        margin-left: 0em;
     }
-    .about__tag::after {
-        right: 27%;
-    } */
+
+    .about__text{
+        text-align: center;
+    }
+    .about__paragraf{
+        text-align: start;
+    }
     .about__titulo--skills {
         margin-top: 2em;
     }
