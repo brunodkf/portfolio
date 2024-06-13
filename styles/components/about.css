@@ -89,7 +89,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .about__container {
         padding: 6em 0;
         flex-direction: column;
@@ -100,26 +100,30 @@
         width: 100%;
     }
 
-    .about__titulo {
+    /* .about__titulo {
         text-align: center;
-    }
-    .about__tag {
+    } */
+    /* .about__tag {
         width: 100%;
         font-size: 1em;
         margin: 0 auto;
         display: flex;
         justify-content: center;
-    }
-    .about__tag::before {
+    } */
+    /* .about__tag::before {
         left: 27%;
     }
     .about__tag::after {
         right: 27%;
+    } */
+    .about__titulo--skills {
+        margin-top: 2em;
     }
+
     .about__cta {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-  
+
 }
