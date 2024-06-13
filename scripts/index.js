@@ -8,6 +8,7 @@ button.addEventListener('click', function () {
   navMenu.forEach(e => e.classList.toggle("mobile"));
 
   corpoSite.style = 'overflow: hidden;';
+
   if(document.querySelector('.header.mobile') == null){
     corpoSite.removeAttribute("style");
   }
@@ -39,7 +40,7 @@ button.addEventListener('click', function () {
 
 
 
-// slide de depoimentos
+// slide da section de depoimentos
 
 const swiperSequencial = new Swiper('.carrousel__depoimentos', {
   slidesPerView: 1,
