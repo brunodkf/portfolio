@@ -91,7 +91,7 @@
     height: auto;
     position: absolute;
     right: 10px;
-    top: 35%;
+    top: 30%;
 }
 
 .banner__socials::before {
@@ -159,7 +159,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .banner{
         margin-bottom: 0px;
     }
@@ -284,4 +284,28 @@
         width: 100%;
     }
 
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    .banner__socials {
+        top: 44%;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    .banner__container {
+        justify-content: space-between;
+    }
+    .banner__text{
+        width: 55%;
+    }
+    .banner__hero {
+        width: 45%;
+    }
+    .banner__text, .banner__hero{
+        padding: 2em 0;
+    }
+    .banner__socials {
+        top: 20%;
+    }
 }
