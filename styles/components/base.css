@@ -5,24 +5,21 @@
     --cinza-claro: #AFB3B7;
     --cinza-principal: #69818D;
     --cinza-escuro: #5A636A;
+
     /* outro */
-    --laranja-claro: #dfa47d;
-    --laranja-claro--hover: #dfa47d75;
-    /* --laranja-claro: #EE7828; */
-    --laranja-principal: #b75f2c;
-    --laranja-escuro: #a8521e;
-    /* outro */
-    --branco-secundario: #EDEDED;
     --preto-principal: #2C3A3D;
-    --preto-escuro: #1b1b1b;
-    /* fonts */
+ 
+    /* fontes */
     --fonte-principal: 'Inter', 'Open Sans';
     --fonte-titulo: 'Gotham-Bold';
 
-    /* testes */
+    /* Cores Principais */
     --preto: #1e1e1e;
+    --preto-escuro: #1b1b1b;
     --cinza: #2c2c2c;
     --branco: #ededed;
+    --branco-secundario: #EDEDED;
+    --laranja-claro: #dfa47d;
 }
 
 
@@ -68,6 +65,11 @@
     padding: .8em 4em;
     border-radius: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cta:hover{
+    transition: ease-in .2s;
+    color: var(--branco-secundario);
 }
 
 

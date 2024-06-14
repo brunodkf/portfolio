@@ -1,9 +1,5 @@
 .banner {
     position: relative;
-    /* background-image: url(./../../assets/imagens/Untitled\ design\ 1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right; */
     margin: 1.2em 0;
 }
 
@@ -15,13 +11,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    /* background-color: rgba(61, 88, 88, 0.363); */
 }
 
 .banner__text,
 .banner__hero {
     width: 45%;
-    /* background-color: rgb(20, 87, 87); */
 }
 
 .banner__hero--img {
@@ -34,7 +28,6 @@
     font-weight: 600;
     letter-spacing: 3px;
     color: var(--laranja-claro);
-    /* color: var(--cinza-principal); */
 }
 
 .banner__titulo {
@@ -131,6 +124,13 @@
     left: 13px;
 }
 
+.banner__redes span:hover{
+    transition: ease .1s;
+    background-color: var(--laranja-claro);
+    background-size: contain;
+    border-radius: 5px;
+}
+
 .banner__redes:nth-child(1) span {
     background-image: url(./../../assets/imagens/socials/instagram.webp);
 }
@@ -210,6 +210,8 @@
         height: 30px;
         left: auto;
     }
+
+    
 
     .banner__socials::before {
         content: '';
