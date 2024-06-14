@@ -64,6 +64,10 @@
 }
 .contato__politica a{
     text-decoration: none;
+    color: var(--laranja-escuro);
+    letter-spacing: 1px;
+}
+.contato__politica a:hover{
     color: var(--laranja-claro);
 }
 .contato__form--submit{
