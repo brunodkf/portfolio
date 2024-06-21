@@ -161,6 +161,9 @@
 .portfolio__projeto:nth-child(1) {
     background-image: url(./../../assets/imagens/projetos/lamedic.webp);
 }
+.portfolio__projeto:nth-child(2) {
+    background-image: url(./../../assets/imagens/projetos/newlife.webp);
+}
 
 
 
