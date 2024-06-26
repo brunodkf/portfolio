@@ -151,9 +151,16 @@
     }
 }
 
-.header.mobile{
+.header.mobile {
     background-color: var(--preto);
+    width: 100vw;
     height: 100vh;
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+}
+.header.mobile .banner {
+    margin: 0em !important;
 }
 .header.mobile .header__menu--mobile {
     display: flex;
