@@ -164,6 +164,9 @@
 .portfolio__projeto:nth-child(2) {
     background-image: url(./../../assets/imagens/projetos/newlife.webp);
 }
+.portfolio__projeto:nth-child(3) {
+    background-image: url(./../../assets/imagens/projetos/deadpoolwolverine.webp);
+}
 
 
 
