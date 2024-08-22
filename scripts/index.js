@@ -13,14 +13,14 @@ button.addEventListener('click', function () {
     corpoSite.removeAttribute("style");
   }
 
-  const someBarra = () => { //função que reseta o menu mobile
-    if (window.scrollY >= 500) { //condição ativada ao scroll vertical ser ativado
+  const someBarra = () => { 
+    if (window.scrollY >= 500) {
       navMenu.forEach(e => e.classList.remove("mobile"));
       document.querySelector('#checkbox-menu').checked = false;
       corpoSite.removeAttribute("style");
     }
 
-    if (window.innerWidth > 1024) { //condição ativada ao atingir o valor de largura determinado
+    if (window.innerWidth > 1024) { 
       navMenu.forEach(e => e.classList.remove("mobile"));
       document.querySelector('#checkbox-menu').checked = false;
       corpoSite.removeAttribute("style");
@@ -47,13 +47,11 @@ const swiperSequencial = new Swiper('.carrousel__depoimentos', {
   centeredSlides: true,
   spaceBetween: 30,
   loop: true,
-  // autoplay: true,
   direction: 'horizontal',
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

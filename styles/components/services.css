@@ -14,7 +14,6 @@
     letter-spacing: 3px;
     color: var(--laranja-claro);
     position: relative;
-    /* color: var(--cinza-principal); */
 }
 .services__tag::before, .services__tag::after{
     content: '';
