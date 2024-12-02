@@ -67,7 +67,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-
+cursor: pointer;
     margin-bottom: 2em;
 }
 
